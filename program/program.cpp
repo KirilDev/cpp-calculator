@@ -5,11 +5,14 @@ using namespace std;
 
 int main(void)
 {
+
+	//Here we go some input from user
 	int answer;
 	cout << "Welcome to simple calculator\n";
 	cout << "1 - sum, 2 - min, 3- multiply, 4 - divide\n";
 	cin >> answer;
 
+	//If user want to sum numbers
 	if (answer == 1) 
 	{
 		long SumFirst;
@@ -21,6 +24,7 @@ int main(void)
 		cin >> SumSecond;
 		cout << SumFirst + SumSecond;
 	}
+		//if want to min numbers
 	else if (answer == 2) 
 	{
 		long MinFirst;
@@ -34,6 +38,7 @@ int main(void)
 		cout << MinAnswer;
 		
 	}
+		//if want to multiply numbers
 	else if (answer == 3)
 	{
 		long MultFirst;
@@ -46,6 +51,7 @@ int main(void)
 		MultAnswer = MultFirst * MultSecond;
 		cout << MultAnswer;
 	}
+		//if want to divide numbers
 	else if (answer == 4)
 	{
 		long DivFirst;
@@ -55,9 +61,10 @@ int main(void)
 		cin >> DivFirst;
 		cout << "Enter Second \n";
 		cin >> DivSecond;
-		DivAnswer = DivFirst - DivSecond;
+		DivAnswer = DivFirst / DivSecond;
 		cout << DivAnswer;
 	}
+		//if user try to use function that program doesn't has
 	else
 	{
 		cout << "Maybe you want add this function?";
